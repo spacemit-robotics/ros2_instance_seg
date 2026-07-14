@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>instance_seg</name>
+  <version>1.0.0</version>
+  <description>ROS 2 YOLOv8-Seg instance segmentation node using VisionService.</description>
+  <maintainer email="robot_team@spacemit.com">robot_team</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>vision</depend>
+  <depend>ament_index_cpp</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <test_depend>python3-numpy</test_depend>
+  <test_depend>rclpy</test_depend>
+  <test_depend>python3-opencv</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

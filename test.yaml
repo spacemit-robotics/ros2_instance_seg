@@ -1,0 +1,20 @@
+module: middleware/ros2/perception/instance_seg
+tests:
+  - name: instance-seg-contract
+    description: Static API and YOLOv8-Seg configuration contract.
+    category: functional
+    scopes: [pr]
+    timeout_s: 30
+    command: bash middleware/ros2/perception/instance_seg/tests/test_contract.sh
+  - name: instance-seg-functional
+    description: Dev-board ROS2 startup and instance metadata/mask topic test.
+    category: functional
+    scopes: [pr]
+    timeout_s: 300
+    command: cd middleware/ros2/perception && bash instance_seg/tests/test_functional.sh
+  - name: instance-seg-invalid-input
+    description: Dev-board validation of invalid configuration and score thresholds.
+    category: functional
+    scopes: [pr]
+    timeout_s: 180
+    command: cd middleware/ros2/perception && bash instance_seg/tests/test_invalid_input.sh
