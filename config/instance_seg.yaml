@@ -1,0 +1,12 @@
+instance_seg_node:
+  ros__parameters:
+    config_path: ""
+    lazy_load: true
+    score_threshold: 0.25
+    image_topic: "/camera/image_raw"
+    mask_topic: "/perception/instance_segmentation"
+    instances_topic: "/instance_seg/instances"
+    debug_image_topic: "/instance_seg/debug_image"
+    use_camera: true
+    camera_id: 1
+    camera_fps: 30.0
